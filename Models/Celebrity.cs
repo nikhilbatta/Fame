@@ -23,7 +23,7 @@ namespace Fame
     public void QuestionAnsweredNo(int followerNumber)
     {
         RemoveFollowers(followerNumber);
-        RemoveMoney();
+        // RemoveMoney(moneyNumber);
     }
 
     
@@ -39,9 +39,9 @@ namespace Fame
     {
         Followers -= followerNumber;
     }
-    private void RemoveMoney()
+    public void RemoveMoney(int moneyNumber)
     {
-        Money = Money - 125;
+        Money -= moneyNumber;
     }
 
     }
