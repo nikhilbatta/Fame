@@ -7,8 +7,7 @@ namespace Fame
     {
         public static void Main()
         {
-            // Situation tomCruise = new Situation("Tom Cruise");
-            // Console.WriteLine("Name: " + tomCruise.Name+ " \n Question 1: " + tomCruise.Questions[0]);+ "\n Question 2: " + tomCruise.Questions[1] + "\n Question 3: " +tomCruise.Questions[2]);
+            
             Console.WriteLine("You're an up and coming actor exploring Hollywood. Whats your name?");
             string userName = Console.ReadLine();
             Celebrity UserCeleb = new Celebrity(userName);
@@ -19,7 +18,6 @@ namespace Fame
             {
                 List<string> celebrityKeys = new List<string>(Situation.CelebrityFunctions.Keys);
 
-                // Dictionary<string, Action> celebStories = new Dictionary<string, Action> (Situation.CelebrityFunctions);
 
                 Random rand = new Random();
                 int randomNum = rand.Next(0);
@@ -28,7 +26,7 @@ namespace Fame
                 Console.WriteLine(randomCelebrity);
                 
 
-                Situation.CelebrityFunctions[randomCelebrity]();
+                Situation.CelebrityFunctions[randomCelebrity](UserCeleb);
 
 
 
