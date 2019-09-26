@@ -15,27 +15,29 @@ namespace Fame
         Followers = 0;
         Money = 0;
     }  
-    public void QuestionAnsweredYes()
+    public void QuestionAnsweredYes(int followNumber)
     {
        AddMoney();
-       AddFollowers();
+       AddFollowers(followNumber);
     }
-    public void QuestionAnsweredNo()
+    public void QuestionAnsweredNo(int followerNumber)
     {
-        RemoveFollowers();
+        RemoveFollowers(followerNumber);
         RemoveMoney();
     }
+
+    
     private void AddMoney()
     {
         Money = Money + 200;
     }
-    private void AddFollowers()
+    private void AddFollowers(int followerNumber)
     {
-        Followers = Followers + 200;
+        Followers += followerNumber;
     }
-    private void RemoveFollowers()
+    private void RemoveFollowers(int followerNumber)
     {
-        Followers = Followers - 125;
+        Followers -= followerNumber;
     }
     private void RemoveMoney()
     {
