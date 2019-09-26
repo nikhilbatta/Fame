@@ -16,34 +16,23 @@ namespace Fame
         }
             public static void HollywoodAdventure(Celebrity UserCeleb, string lastCeleb)
             {
+
+                if(UserCeleb.Followers > 2000)
+                {
+                    Console.WriteLine("Congrats! You are so famous now! GAME OVER");
+                    System.Environment.Exit(1);
+                }
+                else
+                {
                 string randomCelebrity = Situation.GenerateRandCeleb(lastCeleb);
                 Situation.CelebrityFunctions[randomCelebrity](UserCeleb);
+                }
 
 
 
-        //     string[] Celebrities = {"Tom Cruise", "Dan Harmon", "Greg Graffins", "Angelina Jolie", "Andrew Peterson"}; 
-        //     Random rand = new Random();
-        //     int randomNum = rand.Next(0,Celebrities.Length-1);
-        //     string newCeleb = Celebrities[randomNum];
-            
-        //     Console.WriteLine(newCeleb + " wants to invite you to a crazy roof party. Do you go? (y/n)");
-        //     string userAnswer = Console.ReadLine();
-        //     if(userAnswer == "y")
-        //     {
-        //         UserCeleb.QuestionAnsweredYes();
-        //         Console.WriteLine("Congratulations! Your follower count increased! New follower count: " + UserCeleb.Followers);
 
-                
-        //     }
-        //     else
-        //     {
-        //         UserCeleb.QuestionAnsweredNo();
-        //         Console.WriteLine("Fuck" + UserCeleb.Name + "! Your follower count decreased! New follower count: " + UserCeleb.Followers);
-        //     }
-           
-            
-        //    HollywoodAdventure(UserCeleb);
             }
+
         
     }
 }
