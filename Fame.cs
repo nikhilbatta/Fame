@@ -11,21 +11,12 @@ namespace Fame
             Console.WriteLine("You're an up and coming actor exploring Hollywood. Whats your name?");
             string userName = Console.ReadLine();
             Celebrity UserCeleb = new Celebrity(userName);
-            HollywoodAdventure(UserCeleb);
+            HollywoodAdventure(UserCeleb,"");
 
         }
-            public static void HollywoodAdventure(Celebrity UserCeleb)
+            public static void HollywoodAdventure(Celebrity UserCeleb, string lastCeleb)
             {
-                List<string> celebrityKeys = new List<string>(Situation.CelebrityFunctions.Keys);
-
-
-                Random rand = new Random();
-                int randomNum = rand.Next(0);
-                Console.WriteLine(randomNum);
-                string randomCelebrity = celebrityKeys[randomNum];
-                Console.WriteLine(randomCelebrity);
-                
-
+                string randomCelebrity = Situation.GenerateRandCeleb(lastCeleb);
                 Situation.CelebrityFunctions[randomCelebrity](UserCeleb);
 
 

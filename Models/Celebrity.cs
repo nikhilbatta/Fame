@@ -27,6 +27,7 @@ namespace Fame
     }
 
     
+    
     private void AddMoney()
     {
         Money = Money + 200;
