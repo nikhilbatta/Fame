@@ -6,7 +6,7 @@ namespace Fame
     {
         
 
-        public static Dictionary<string,Action<Celebrity>> CelebrityFunctions = new Dictionary<string,Action<Celebrity>>{{"Tom Cruise", TomCruise}, {"Wiz Khalifa", WizKhalifa}};
+        public static Dictionary<string,Action<Celebrity>> CelebrityFunctions = new Dictionary<string,Action<Celebrity>>{{"Tom Cruise", TomCruise}, {"Wiz Khalifa", WizKhalifa}, {"Elijah Wood", ElijahWood}};
 
         public static void TomCruise(Celebrity userCeleb)
         {
@@ -83,7 +83,43 @@ namespace Fame
             }            
             
         }
-        
+        public static void ElijahWood(Celebrity userCeleb)
+        {
+            Console.WriteLine("You see Elijah Wood at the pub. Do you want to ask to join in a drink? Y/N");
+            string answer1 = Console.ReadLine();
+            if(answer1 == "y" || answer1 =="Y")
+            {
+                Console.WriteLine("He graciously offers to buy you a beer that sounds like it's imported from Germany. Will you accept? Y/N");
+                string answer2 = Console.ReadLine();
+                if(answer2 == "Y" || answer2 == "y")
+                {                   
+                    Console.WriteLine("You and Elijah get plastered and papparazzi take a picture of you both drunk singing in the street. You gain 150 followers.");
+                   userCeleb.QuestionAnsweredYes(150);
+
+                }
+                else if (answer2 == "N" || answer2 == "n")
+                {
+                    Console.WriteLine("Elijah Wood is insulted and throws his drink in your face. You lose 100 followers.");
+                    userCeleb.QuestionAnsweredNo(100);
+                }
+                else
+                {
+                    Console.WriteLine("That's not a valid input. Try again.");
+                    ElijahWood(userCeleb);
+                }
+
+            }
+            else if (answer1 == "N" || answer1 == "n")
+            {
+                Program.HollywoodAdventure(userCeleb);
+            }
+            else
+            {
+                 Console.WriteLine("That's not a valid input. Try again.");
+                    ElijahWood(userCeleb);
+            }            
+            
+        }
 
 
     }
