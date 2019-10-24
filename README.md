@@ -1,12 +1,12 @@
-# _{Fame}_
+# _Fame_
 
-#### _{This is a RPG game developed with C#}, {September 2019}_
+#### _This is a RPG game developed with C#, September 2019_
 
-#### By _**{Nikhil Batta, Jen Batara, Rachael Boussiey}**_
+#### By _**Nikhil Batta, Jen Batara, Rachael Boussiey**_
 
 ## Description
 
-_{This is an rpg game revolving around the concept of celebrities, you will be able to enter your name and play through with celebrity related questions.}_
+_This is an rpg game revolving around the concept of celebrities, you will be able to enter your name and play through with celebrity related questions._
 
 ## Setup/Installation Requirements
 
@@ -17,18 +17,18 @@ _{This is an rpg game revolving around the concept of celebrities, you will be a
 
 ## Known Bugs
 
-_{There are no known bugs as of now}_
+_There are no known bugs as of now_
 
 ## Support and contact details
 
-_{If you have any questions or concerns please contact me at nbatta08@gmail.com}_
+_If you have any questions or concerns please contact me at nbatta08@gmail.com_
 
 ## Technologies Used
 
-_{C# and .NETCORE}_
+_C# and .NETCORE_
 
 ### License
 
-*{MIT}*
+*MIT*
 
-Copyright (c) 2019 **_{Nikhil Batta}_**
+Copyright (c) 2019 **_Nikhil Batta_**
