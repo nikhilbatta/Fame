@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an rpg game revolving around the concept of celebrities, you will be able to enter your name and play through with celebrity related questions._
+_This is a rpg game revolving around the concept of celebrities, you will be able to enter your name and play through with celebrity related questions._
 
 ## Setup/Installation Requirements
 
